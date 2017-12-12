@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D53FC3B5C080B8A759492E1 /* Pods_MOYOKids.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E207942D25CCE53E087FB4AA /* Pods_MOYOKids.framework */; };
 		C3EEF46D1FDFD4040055ADF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EEF46C1FDFD4040055ADF8 /* AppDelegate.swift */; };
 		C3EEF46F1FDFD4040055ADF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EEF46E1FDFD4040055ADF8 /* ViewController.swift */; };
 		C3EEF4721FDFD4040055ADF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3EEF4701FDFD4040055ADF8 /* Main.storyboard */; };
@@ -51,6 +52,9 @@
 		C3EEF48C1FDFD4040055ADF8 /* MOYOKidsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOYOKidsUITests.swift; sourceTree = "<group>"; };
 		C3EEF48E1FDFD4040055ADF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3EEF49B1FDFDF160055ADF8 /* NameSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameSpace.swift; sourceTree = "<group>"; };
+		C75761910DAB335092BA713E /* Pods-MOYOKids.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOYOKids.release.xcconfig"; path = "Pods/Target Support Files/Pods-MOYOKids/Pods-MOYOKids.release.xcconfig"; sourceTree = "<group>"; };
+		E207942D25CCE53E087FB4AA /* Pods_MOYOKids.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MOYOKids.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FADB1FAB98E7469EA7F9E0D6 /* Pods-MOYOKids.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOYOKids.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MOYOKids/Pods-MOYOKids.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D53FC3B5C080B8A759492E1 /* Pods_MOYOKids.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1BCA9D8997FAD93CE0665140 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E207942D25CCE53E087FB4AA /* Pods_MOYOKids.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C3EEF4601FDFD4040055ADF8 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +98,8 @@
 				C3EEF4801FDFD4040055ADF8 /* MOYOKidsTests */,
 				C3EEF48B1FDFD4040055ADF8 /* MOYOKidsUITests */,
 				C3EEF46A1FDFD4040055ADF8 /* Products */,
+				FCC9066CD13542129B799203 /* Pods */,
+				1BCA9D8997FAD93CE0665140 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,6 +153,15 @@
 			path = HelpingClasses;
 			sourceTree = "<group>";
 		};
+		FCC9066CD13542129B799203 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FADB1FAB98E7469EA7F9E0D6 /* Pods-MOYOKids.debug.xcconfig */,
+				C75761910DAB335092BA713E /* Pods-MOYOKids.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,9 +169,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3EEF4911FDFD4040055ADF8 /* Build configuration list for PBXNativeTarget "MOYOKids" */;
 			buildPhases = (
+				A64198F4B94CED296931D50F /* [CP] Check Pods Manifest.lock */,
 				C3EEF4651FDFD4040055ADF8 /* Sources */,
 				C3EEF4661FDFD4040055ADF8 /* Frameworks */,
 				C3EEF4671FDFD4040055ADF8 /* Resources */,
+				2CD284BFCF50EF03F66402DA /* [CP] Embed Pods Frameworks */,
+				1623363F2BB067D79580277D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -266,6 +293,90 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1623363F2BB067D79580277D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MOYOKids/Pods-MOYOKids-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2CD284BFCF50EF03F66402DA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MOYOKids/Pods-MOYOKids-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Colorify/Colorify.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/GSMessages/GSMessages.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/ImageSlideshow/ImageSlideshow.framework",
+				"${BUILT_PRODUCTS_DIR}/PMSuperButton/PMSuperButton.framework",
+				"${BUILT_PRODUCTS_DIR}/PasswordTextField/PasswordTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Wrap/Wrap.framework",
+				"${BUILT_PRODUCTS_DIR}/YouTubePlayer/YouTubePlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/youtube-ios-player-helper/youtube_ios_player_helper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Colorify.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GSMessages.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageSlideshow.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PMSuperButton.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PasswordTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Wrap.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YouTubePlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/youtube_ios_player_helper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MOYOKids/Pods-MOYOKids-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A64198F4B94CED296931D50F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MOYOKids-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C3EEF4651FDFD4040055ADF8 /* Sources */ = {
@@ -440,6 +551,7 @@
 		};
 		C3EEF4921FDFD4040055ADF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FADB1FAB98E7469EA7F9E0D6 /* Pods-MOYOKids.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -455,6 +567,7 @@
 		};
 		C3EEF4931FDFD4040055ADF8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C75761910DAB335092BA713E /* Pods-MOYOKids.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
