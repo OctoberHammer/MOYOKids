@@ -14,6 +14,9 @@
 		C3EEF4771FDFD4040055ADF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3EEF4751FDFD4040055ADF8 /* LaunchScreen.storyboard */; };
 		C3EEF4821FDFD4040055ADF8 /* MOYOKidsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EEF4811FDFD4040055ADF8 /* MOYOKidsTests.swift */; };
 		C3EEF48D1FDFD4040055ADF8 /* MOYOKidsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EEF48C1FDFD4040055ADF8 /* MOYOKidsUITests.swift */; };
+		C3EEF49C1FDFDF160055ADF8 /* NameSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EEF49B1FDFDF160055ADF8 /* NameSpace.swift */; };
+		C3EEF49D1FDFDF160055ADF8 /* NameSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EEF49B1FDFDF160055ADF8 /* NameSpace.swift */; };
+		C3EEF49E1FDFDF160055ADF8 /* NameSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EEF49B1FDFDF160055ADF8 /* NameSpace.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,7 @@
 		C3EEF4881FDFD4040055ADF8 /* MOYOKidsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MOYOKidsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3EEF48C1FDFD4040055ADF8 /* MOYOKidsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOYOKidsUITests.swift; sourceTree = "<group>"; };
 		C3EEF48E1FDFD4040055ADF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3EEF49B1FDFDF160055ADF8 /* NameSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameSpace.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 		C3EEF46B1FDFD4040055ADF8 /* MOYOKids */ = {
 			isa = PBXGroup;
 			children = (
+				C3EEF49A1FDFDEEA0055ADF8 /* HelpingClasses */,
 				C3EEF46C1FDFD4040055ADF8 /* AppDelegate.swift */,
 				C3EEF46E1FDFD4040055ADF8 /* ViewController.swift */,
 				C3EEF4701FDFD4040055ADF8 /* Main.storyboard */,
@@ -123,6 +128,14 @@
 				C3EEF48E1FDFD4040055ADF8 /* Info.plist */,
 			);
 			path = MOYOKidsUITests;
+			sourceTree = "<group>";
+		};
+		C3EEF49A1FDFDEEA0055ADF8 /* HelpingClasses */ = {
+			isa = PBXGroup;
+			children = (
+				C3EEF49B1FDFDF160055ADF8 /* NameSpace.swift */,
+			);
+			path = HelpingClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3EEF49C1FDFDF160055ADF8 /* NameSpace.swift in Sources */,
 				C3EEF46F1FDFD4040055ADF8 /* ViewController.swift in Sources */,
 				C3EEF46D1FDFD4040055ADF8 /* AppDelegate.swift in Sources */,
 			);
@@ -269,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3EEF4821FDFD4040055ADF8 /* MOYOKidsTests.swift in Sources */,
+				C3EEF49D1FDFDF160055ADF8 /* NameSpace.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3EEF48D1FDFD4040055ADF8 /* MOYOKidsUITests.swift in Sources */,
+				C3EEF49E1FDFDF160055ADF8 /* NameSpace.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
